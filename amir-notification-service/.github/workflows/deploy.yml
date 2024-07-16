@@ -40,4 +40,6 @@ jobs:
             --image ${{ secrets.DOCKER_HUB_USERNAME }}/amirnotificationapp:latest \
             --target-port 8007 \
             --ingress 'external' \
+            --env-vars 'APP_SETTING=my-setting'
+
             
